@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración — Vivero</title>
+    <link rel="stylesheet" href="../recursos/css/admin.css">
+</head>
+<body>
+
+    <header class="admin-header">
+        <img src="../recursos/imagenes/generales/logo.fundacion.png" alt="Logo vivero">
+        <h1>Panel de Administración</h1>
+    </header>
+
+    <main class="admin-main">
+
+        <!-- FORMULARIO ALTA / EDICIÓN -->
+        <section class="admin-form-section">
+            <h2 id="form-titulo">Agregar producto</h2>
+                <form id="form-producto">
+    <input type="hidden" id="input-id">
+
+    <div class="form-grupo">
+        <label for="input-nombre">Nombre</label>
+        <input type="text" id="input-nombre" placeholder="Ej: Lavanda" required>
+    </div>
+
+    <div class="form-grupo">
+        <label for="input-tipoplanta">Tipo de planta</label>
+        <select id="input-tipoplanta">
+            <option value="">— Sin tipo —</option>
+            <option value="Aromáticas">Aromáticas</option>
+            <option value="Suculentas">Suculentas</option>
+            <option value="Cactuses">Cactuses</option>
+            <option value="Flores">Flores</option>
+        </select>
+    </div>
+
+    <div class="form-grupo">
+        <label for="input-tipoproducto">Tipo de producto</label>
+        <select id="input-tipoproducto">
+            <option value="Planta">Planta</option>
+            <option value="Maceta">Maceta</option>
+            <option value="Accesorio">Accesorio</option>
+        </select>
+    </div>
+
+    <div class="form-grupo">
+        <label for="input-imagen">Ruta de imagen</label>
+        <input type="text" id="input-imagen" placeholder="Ej: ./public/recursos/imagenes/plantas/Lavanda.jpeg">
+    </div>
+
+    <div class="form-grupo">
+        <label for="input-detalle1">Detalle 1</label>
+        <input type="text" id="input-detalle1" placeholder="Ej: Mucho riego">
+    </div>
+
+    <div class="form-grupo">
+        <label for="input-detalle2">Detalle 2</label>
+        <input type="text" id="input-detalle2" placeholder="Ej: Necesita sol directo">
+    </div>
+
+    <div class="form-botones">
+        <button type="submit" class="btn btn-primario">Guardar</button>
+        <button type="button" class="btn btn-secundario" id="btn-cancelar">Cancelar</button>
+    </div>
+</form>
+            
+            <p id="mensaje-form" class="mensaje oculto"></p>
+        </section>
+
+        <!-- TABLA DE PRODUCTOS -->
+        <section class="admin-tabla-section">
+            <h2>Productos cargados</h2>
+            <table id="tabla-productos">
+               <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Tipo planta</th>
+        <th>Tipo producto</th>
+        <th>Acciones</th>
+    </tr>
+</thead>
+                <tbody id="tbody-productos">
+                    <tr><td colspan="5">Cargando...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="../recursos/js/admin.js"></script>
+</body>
+</html>

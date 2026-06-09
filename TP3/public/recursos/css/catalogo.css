@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Walter+Turncoat&display=swap');
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  background-color: #f5faff;
+}
+
+main h1 {
+  color: #007fa3;
+  font-family: 'Walter Turncoat', sans-serif;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+main h2 {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.tarjeta-titulos {
+  background-color: #d0fba2;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+main section p {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Seccion de filtros  */
+main section select,
+main section label {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+select {
+  padding: 8px 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  
+}
+ /* Botones */
+.botones {
+  margin-top: 20px;
+}
+
+.botones button {
+  background-color: #007fa3;
+  color: #fff;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.botones button:hover {
+  background-color: #005f80;
+}
+
+/* Seccion del catálogo  */
+#plantas {
+  margin-top: 50px;
+}
+
+#plantas h3 {
+  color: #007fa3;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+/* Contenedor de plantas  */
+.catalogo-plantas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* 3 o 4 por fila según el tamaño de pantalla */
+  gap: 30px;
+  justify-items: center;
+}
+
+/*  Tarjeta de cada planta  */
+.planta-etiqueta {
+  background-color: #e6ffcc;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planta-etiqueta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.planta-etiqueta img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.planta-etiqueta p {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Ventana modal */
+#modal-planta {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+  padding: 20px;
+}
+
+#modal-planta .modal-contenido {
+  background:  #cce4f6;
+  width: 100%;
+  max-width: 520px;
+  min-height: 560px;
+  border-radius: 16px;
+  padding: 22px 22px 18px 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  text-align: center;
+  animation: modal-aparecer 0.34s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.planta-seleccionada {
+  width: 100%;
+  max-width: 260px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+#nombre-planta {
+  margin: 0;
+  color: #006b8f;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+#modal-planta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #333;
+  font-size: 1.15rem;
+}
+
+.iconos-cuidados {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.iconos-cuidados img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+#modal-planta button {
+  background-color: #007fa3;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  align-self: center;
+}
+
+
+.tarjeta-titulos {
+  position: relative; /* necesario para posicionar la enredadera */
+}
+
+.tarjeta-titulos::before {
+  content: "";
+  position: absolute;
+  left: -100px;  /* moverla más cerca del borde */
+  top: -50px;   /* subirla */
+  width: 300px;
+  height: 300px;
+
+  background-image: url("../imagenes/generales/deco.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  pointer-events: none;
+}
+
+.tarjeta-titulos::after {
+  content: "";
+  position: absolute;
+  right: -40px;   /* Ajustá esto según el tamaño */
+  bottom: -10px;  /* Esto la baja */
+  width: 250px;
+  height: 250px;
+  background-image: url("../imagenes/generales/deco2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+
+@media (max-width: 420px) {
+  #modal-planta .modal-contenido {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .planta-seleccionada {
+    height: 140px;
+    max-width: 220px;
+  }
+
+  .iconos-cuidados img {
+    width: 42px;
+    height: 42px;
+  }
+
+  #nombre-planta {
+    font-size: 1.05rem;
+  }
+}

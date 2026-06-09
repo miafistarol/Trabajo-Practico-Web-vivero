@@ -1,0 +1,695 @@
+[
+    {
+        "id": 1,
+        "nombre": "Aloe vera",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Aloe_Vera.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Necesito un vaso de agua por semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado9.png"
+            },
+            {
+                "descripcion": "No me gusta el frío",
+                "imagen": "./recursos/imagenes/cuidados/cuidado10.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Cuidar del frío",
+                "detalle2": "Crecimiento lento"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Albahaca",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Albahaca.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Soy de estación primavera-verano",
+                "imagen": "./recursos/imagenes/cuidados/cuidado13.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Mucho riego",
+                "detalle2": "Siempre viene bien tenerla para la cocina"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Cactus",
+        "tipoplanta": "Cactuses",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Cactus1.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy un cactus",
+                "imagen": "./recursos/imagenes/cuidados/Cactuses.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Regarme cada 15 días",
+                "imagen": "./recursos/imagenes/cuidados/cuidado6.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "Necesita mucho sol"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Ciboulette",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Ciboulette.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Regarme cada 15 días",
+                "imagen": "./recursos/imagenes/cuidados/cuidado6.png"
+            },
+            {
+                "descripcion": "Me gusta la tierra rica",
+                "imagen": "./recursos/imagenes/cuidados/cuidado11.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Facil de mantener",
+                "detalle2": "Siempre viene bien tenerla para la cocina"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Curry",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Curry.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de estación primavera-verano",
+                "imagen": "./recursos/imagenes/cuidados/cuidado13.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Poco riego",
+                "detalle2": "Puede usarse para decorar"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Romero",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Romero.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Me aguanto el frío",
+                "imagen": "./recursos/imagenes/cuidados/cuidado7.png"
+            },
+            {
+                "descripcion": "Me gusta la tierra rica",
+                "imagen": "./recursos/imagenes/cuidados/cuidado11.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Necesita mucho sol",
+                "detalle2": "Siempre viene bien tenerla para la cocina"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Flor rosa",
+        "tipoplanta": "Flores",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Flor_rosa.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una flor",
+                "imagen": "./recursos/imagenes/cuidados/Flores.png"
+            },
+            {
+                "descripcion": "No me gusta el sol directo",
+                "imagen": "./recursos/imagenes/cuidados/cuidado5.png"
+            },
+            {
+                "descripcion": "Necesito un vaso de agua por semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado9.png"
+            },
+            {
+                "descripcion": "Me gusta la tierra rica",
+                "imagen": "./recursos/imagenes/cuidados/cuidado11.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Regar una vez a la semana",
+                "detalle2": "Cuidar del sol directo"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Geranio",
+        "tipoplanta": "Flores",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Geranio.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una flor",
+                "imagen": "./recursos/imagenes/cuidados/Flores.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Necesito que me corten las hojas",
+                "imagen": "./recursos/imagenes/cuidados/cuidado8.png"
+            },
+            {
+                "descripcion": "Me gusta la tierra rica",
+                "imagen": "./recursos/imagenes/cuidados/cuidado11.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Florece casi todo el año",
+                "detalle2": "Es bueno ir podando ramas secas"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "Lavanda",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Lavanda.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Me aguanto el frío",
+                "imagen": "./recursos/imagenes/cuidados/cuidado7.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Es muy resistente",
+                "detalle2": "Crece rápido"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "Lazo de amor ",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Lazo_de_amor.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Me gusta mucho la sombra",
+                "imagen": "./recursos/imagenes/cuidados/cuidado3.png"
+            },
+            {
+                "descripcion": "No me gusta el sol directo",
+                "imagen": "./recursos/imagenes/cuidados/cuidado5.png"
+            },
+            {
+                "descripcion": "Regarme cada 15 días",
+                "imagen": "./recursos/imagenes/cuidados/cuidado6.png"
+            },
+            {
+                "descripcion": "Soy de estación invierno-otoño",
+                "imagen": "./recursos/imagenes/cuidados/cuidado14.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Ideal para macetas colgantes",
+                "detalle2": "Cuiadarla del sol directo"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "nombre": "Lengua de suegra",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Lengua_de_suegra.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "No me gusta el frío",
+                "imagen": "./recursos/imagenes/cuidados/cuidado10.png"
+            },
+            {
+                "descripcion": "Voy adentro de la casa",
+                "imagen": "./recursos/imagenes/cuidados/cuidado4.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "Ideal para decorar la casa"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "Tomillo",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Tomillo.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de estación invierno-otoño",
+                "imagen": "./recursos/imagenes/cuidados/cuidado14.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Necesita muy poco riego",
+                "detalle2": "Siempre viene bien tenerla para la cocina"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "nombre": "Oregano",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Oregano.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            },
+            {
+                "descripcion": "Soy de estación primavera-verano",
+                "imagen": "./recursos/imagenes/cuidados/cuidado13.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Necesita muy poco riego",
+                "detalle2": "Siempre viene bien tenerla para la cocina"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "nombre": "Menta",
+        "tipoplanta": "Aromáticas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Menta.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una aromática",
+                "imagen": "./recursos/imagenes/cuidados/Aromaticas.png"
+            },
+            {
+                "descripcion": "Me gusta mucho la sombra",
+                "imagen": "./recursos/imagenes/cuidados/cuidado3.png"
+            },
+            {
+                "descripcion": "Necesito un vaso de agua por semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado9.png"
+            },
+            {
+                "descripcion": "Soy de estación primavera-verano",
+                "imagen": "./recursos/imagenes/cuidados/cuidado13.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Cuidarla del sol directo",
+                "detalle2": "Siempre viene bien tenerla para la cocina"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta7.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Regarme cada 15 días",
+                "imagen": "./recursos/imagenes/cuidados/cuidado6.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta1.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta2.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta3.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta4.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta5.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "nombre": "Suculenta",
+        "tipoplanta": "Suculentas",
+        "tipoproducto": "Planta",
+        "imagen": "./recursos/imagenes/plantas/Suculenta6.jpeg",
+        "cuidados": [
+            {
+                "descripcion": "Soy una suculenta",
+                "imagen": "./recursos/imagenes/cuidados/Suculentas.png"
+            },
+            {
+                "descripcion": "Necesito mucho riego durante la semana",
+                "imagen": "./recursos/imagenes/cuidados/cuidado1.png"
+            },
+            {
+                "descripcion": "Me gusta mucho el sol",
+                "imagen": "./recursos/imagenes/cuidados/cuidado2.png"
+            },
+            {
+                "descripcion": "Soy de bajo mantenimiento",
+                "imagen": "./recursos/imagenes/cuidados/cuidado12.png"
+            }
+        ],
+        "detalle": [
+            {
+                "detalle1": "Planta para principiantes",
+                "detalle2": "No necesita tanto riego"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Chica1.jpeg",
+        "tipoproducto": "Maceta"
+    },
+    {
+        "id": 23,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Mediana1.jpeg",
+        "tipoproducto": "Maceta"
+    },
+    {
+        "id": 24,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Mediana2.jpeg",
+        "tipoproducto": "Maceta"
+    },
+    {
+        "id": 25,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Mediana3.jpeg",
+        "tipoproducto": "Maceta"
+    },
+    {
+        "id": 26,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Mediana4.jpeg",
+        "tipoproducto": "Maceta"
+    },
+    {
+        "id": 27,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Grande1.jpeg",
+        "tipoproducto": "Maceta"
+    },
+    {
+        "id": 28,
+        "nombre": "Maceta pintada a mano",
+        "imagen": "./recursos/imagenes/plantas/Maceta_Grande2.jpeg",
+        "tipoproducto": "Maceta"
+    }
+]

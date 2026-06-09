@@ -1,0 +1,208 @@
+/* ── Variables (las mismas que usa el TP2) ─────────────────── */
+:root {
+    --verde-oscuro:  #2d5a27;
+    --verde-medio:   #4a7c42;
+    --verde-claro:   #7db87a;
+    --crema:         #f5f0e8;
+    --blanco:        #ffffff;
+    --gris-texto:    #333333;
+    --gris-borde:    #cccccc;
+    --rojo:          #c0392b;
+    --rojo-hover:    #a93226;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--crema);
+    color: var(--gris-texto);
+}
+
+/* ── Header ────────────────────────────────────────────────── */
+.admin-header {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin-header img {
+    height: 50px;
+}
+
+.admin-header h1 {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+/* ── Layout principal ──────────────────────────────────────── */
+.admin-main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ── Sección formulario ────────────────────────────────────── */
+.admin-form-section {
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-top: 4px solid var(--verde-medio);
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+.admin-form-section h2,
+.admin-tabla-section h2 {
+    font-size: 1.1rem;
+    color: var(--verde-oscuro);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gris-borde);
+}
+
+.form-grupo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-grupo label {
+    font-size: 0.85rem;
+    color: var(--verde-oscuro);
+    font-weight: bold;
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--gris-borde);
+    border-radius: 3px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: var(--crema);
+    transition: border-color 0.2s;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--verde-medio);
+}
+
+.form-botones {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+}
+
+/* ── Botones ───────────────────────────────────────────────── */
+.btn {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn-primario {
+    background-color: var(--verde-medio);
+    color: var(--blanco);
+}
+
+.btn-primario:hover {
+    background-color: var(--verde-oscuro);
+}
+
+.btn-secundario {
+    background-color: var(--gris-borde);
+    color: var(--gris-texto);
+}
+
+.btn-secundario:hover {
+    background-color: #b0b0b0;
+}
+
+.btn-editar {
+    background-color: var(--verde-claro);
+    color: var(--blanco);
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.btn-editar:hover {
+    background-color: var(--verde-medio);
+}
+
+.btn-eliminar {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.btn-eliminar:hover {
+    background-color: var(--rojo-hover);
+}
+
+/* ── Mensaje de feedback ───────────────────────────────────── */
+.mensaje {
+    margin-top: 1rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.mensaje.oculto { display: none; }
+.mensaje.exito   { background-color: #d4edda; color: #2d6a3f; }
+.mensaje.error   { background-color: #f8d7da; color: var(--rojo); }
+
+/* ── Tabla ─────────────────────────────────────────────────── */
+.admin-tabla-section {
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-top: 4px solid var(--verde-medio);
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+#tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+#tabla-productos thead {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+}
+
+#tabla-productos th,
+#tabla-productos td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid var(--gris-borde);
+}
+
+#tabla-productos tbody tr:hover {
+    background-color: #f0f5ee;
+}
+
+#tabla-productos td:last-child {
+    display: flex;
+    gap: 0.4rem;
+}

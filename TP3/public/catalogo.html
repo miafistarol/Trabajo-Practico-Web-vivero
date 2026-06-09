@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono-->
+    <link rel="icon" type="image/png" href="./recursos/imagenes/generales/favicon.png">
+<!--linkear CSS-->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+    <link rel="stylesheet" href="./recursos/css/catalogo.css">
+
+    <script type="module" src="./recursos/js/catalogo.js"></script>
+    
+    <title>Fundación Rucahue Vivero</title>
+</head>
+
+<!---botón de WPP--->
+<a href="https://wa.me/54911XXXXXXXX" class="btn-whatsapp" target="_blank">
+    <img src="./recursos/imagenes/generales/whatsapp.png" alt="WhatsApp">
+</a>
+<body>
+
+    <header class="cabecera-principal">
+        <a href="./index.html">
+            <img src="./recursos/imagenes/generales/logo.fundacion.png" alt="Logo de la fundación ">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./catalogo.html">VIVERO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article class="tarjeta-titulos">
+           
+            <h1>
+                VIVERO CASA AZUL
+            </h1>
+            <h2>
+                Plantas y macetas llenas de vida, color y creatividad te esperan
+            </h2>
+        </article>
+        <section>
+            <p>Explora nuestras plantas organizadas por categorías. Al hacer clic en cada una podrás ver sus cuidados y
+                detalles.</p>
+        </section>
+
+        <!-- filtros -->
+        <section>
+            <label for="id-tipo">Tipo de planta</label>
+            <select name="tipos" id="id-tipo">
+                <option value="" disabled selected hidden></option>
+                <option value="Suculentas">Suculentas</option>
+                <option value="Cactuses">Cactuses</option>
+                <option value="Flores">Flores</option>
+                <option value="Aromáticas">Aromáticas</option>
+            </select>
+
+            <article class="botones">
+                <button type="button" id="btn-filtrar">Filtrar</button>
+                <button type="button" id="btn-limpiar">Limpiar</button>
+                <button type="button" id="btn-macetas">Macetas</button>
+            </article>
+        </section>
+
+        <!-- sección de imagenes plantas -->
+        <section id="plantas">
+            
+            <h3>Plantas disponibles</h3>
+            <article id="catalogo-plantas" class="catalogo-plantas">
+
+                <div class="planta-etiqueta" data-id="">
+                    <img src=" " alt=" ">
+                    <p> </p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- ventana modal -->
+    <section id="modal-planta">
+
+        <div class="modal-contenido">
+            <!-- imagen y nombre de la planta -->
+            <img class="planta-seleccionada" src=" " alt=" ">
+            <h2 id="nombre-planta"></h2>
+
+            <!-- detalles de los cuidados-->
+            <ul>
+                <li id="detalle1"></li>
+                <li id="detalle2"></li>
+            </ul>
+
+            <!-- iconos que representan los cuidados y lo dicho en los detalles, estos fueron usados en el programa para el 
+                 vivero por lo tanto los chicos los entienden y les es familiar -->
+            <div class="iconos-cuidados">
+                <img src=" " alt="">
+                <img src=" " alt="">
+                <img src=" " alt="">
+                <img src=" " alt="">
+            </div>
+
+            <!-- botón cerrar -->
+            <button id="btn-cerrar-modal">Cerrar</button>
+        </div>
+
+    </section>
+    <!-- fin ventana modal -->
+
+    <footer class="pie-principal">
+        <article class="pie-contenido">
+            <h2>Comunicate con nosotros</h2>
+            <ul>
+                <li>
+                    <img src="./recursos/imagenes/generales/instagram.png" alt="Logo de Instagram">
+                    <span>Seguinos en </span>
+                    <a href="https://instagram.com/fundacionrucahue" target="_blank">@fundacionrucahue</a>
+                </li>
+                <li>
+                    <img src="./recursos/imagenes/generales/llamada.png" alt="Logo de teléfono">
+                    <span>Teléfono: </span>
+                    <a href="tel:+543515409081">+54 351 5409081</a>
+                </li>
+                <li>
+                    <img src="./recursos/imagenes/generales/mapa.png" alt="Logo de mapa">
+
+                    <a href="https://www.google.com/maps/place/Rucahue/@-31.3530686,-64.2548275,17z/data=!3m1!4b1!4m6!3m5!1s0x94329fb112862d91:0xa3c3f8e9e887789!8m2!3d-31.3530686!4d-64.2522526!16s%2Fg%2F11gjwvp8wq?entry=ttu"
+                        target="_blank">
+                        Amadeo Avogadro 5938, Villa Belgrano, Córdoba
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <p class="pie-copy">© 2025 Fundación Rucahue - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

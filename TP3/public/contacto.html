@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono-->
+    <link rel="icon" type="image/png" href="./recursos/imagenes/generales/favicon.png">
+
+    <link rel="stylesheet" href="./recursos/css/index.css">
+    <link rel="stylesheet" href="./recursos/css/contacto.css">
+
+    <script type="module" src="./recursos/js/contacto.js"></script>
+    <title>Fundación Rucahue Contacto</title>
+</head>
+
+<!---botón de WPP--->
+<a href="https://wa.me/54911XXXXXXXX" class="btn-whatsapp" target="_blank">
+    <img src="./recursos/imagenes/generales/whatsapp.png" alt="WhatsApp">
+</a>
+
+<body>
+    <header class="cabecera-principal">
+        <a href="./index.html">
+            <img src="./recursos/imagenes/generales/logo.fundacion.png" alt="Logo de la fundación ">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./catalogo.html">VIVERO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-contacto">
+            ¿Tenés dudas? Escribinos, estamos para ayudarte
+        </h1>
+        <h2 class="subtitulo-contacto">
+            Completá el formulario y te contactaremos pronto
+        </h2>
+        <!-- Formulario -->
+        <section class="formulario-pedidos">
+            <form id="miFormulario" action="./contacto.html" method="post">
+
+                <label for="id-nombre">Nombre:</label>
+                <input type="text" name="nombre" id="id-nombre" required autocomplete="given-name">
+
+                <label for="id-telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="id-telefono" required autocomplete="tel">
+
+                <label for="id-email">Email:</label>
+                <input type="email" name="email" id="id-email" required autocomplete="email">
+
+                <label for="id-mensaje">Mensaje:</label>
+                <textarea name="mensaje" rows="10" cols="50" id="id-mensaje" required autocomplete="off"></textarea>
+
+                <!-- Botón -->
+                <button type="submit" id="btnEnviar">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Ventana modal -->
+    <section id="modal-gracias" class="modal">
+        <article class="contenido-modal">
+            <h2>¡Gracias por contactarnos!</h2>
+            <p> Hemos recibido tu mensaje y nuestro equipo se pondrá en contacto con vos lo antes posible.</p>
+            <img src="./recursos/imagenes/generales/ventana-modal-contacto.png" alt="Carita feliz">
+            <button type="button" id="btnCerrar">Cerrar</button>
+        </article>
+    </section>
+    <!-- Fin ventana modal -->
+
+    <footer class="pie-principal">
+        <article class="pie-contenido">
+            <h2>Comunicate con nosotros</h2>
+            <ul>
+                <li>
+                    <img src="./recursos/imagenes/generales/instagram.png" alt="Logo de Instagram">
+                    <span>Seguinos en </span>
+                    <a href="https://instagram.com/fundacionrucahue" target="_blank">@fundacionrucahue</a>
+                </li>
+                <li>
+                    <img src="./recursos/imagenes/generales/llamada.png" alt="Logo de teléfono">
+                    <span>Teléfono: </span>
+                    <a href="tel:+543515409081">+54 351 5409081</a>
+                </li>
+                <li>
+                    <img src="./recursos/imagenes/generales/mapa.png" alt="Logo de mapa">
+
+                    <a href="https://www.google.com/maps/place/Rucahue/@-31.3530686,-64.2548275,17z/data=!3m1!4b1!4m6!3m5!1s0x94329fb112862d91:0xa3c3f8e9e887789!8m2!3d-31.3530686!4d-64.2522526!16s%2Fg%2F11gjwvp8wq?entry=ttu"
+                        target="_blank">
+                        Amadeo Avogadro 5938, Villa Belgrano, Córdoba
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <p class="pie-copy">© 2025 Fundación Rucahue - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.titulo-contacto,
+.subtitulo-contacto {
+  text-align: center;
+  color: #006b8f;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 1.2;
+}
+
+.subtitulo-contacto {
+  color: #333;
+  font-size: 30px;
+}
+
+.titulo-contacto {
+  font-size: 36px;
+}
+
+.formulario-pedidos {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f5faff;
+}
+
+.formulario-pedidos form {
+  background-color: #cef7a3;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-pedidos label {
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+.formulario-pedidos input,
+.formulario-pedidos textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  resize: none;
+}
+
+.formulario-pedidos input:focus,
+.formulario-pedidos textarea:focus {
+  outline: none;
+  border-color: #007fa3;
+  box-shadow: 0 0 5px rgba(0, 127, 163, 0.3);
+}
+
+.formulario-pedidos button {
+  background-color: #006b8f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-pedidos button:hover {
+  background-color: #0095b6;
+}
+
+/* Ventana modal */
+#modal-gracias {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+  padding: 20px;
+}
+
+
+#modal-gracias article {
+  background-color: #cce4f6;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  min-height: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#modal-gracias h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+#modal-gracias p {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+#modal-gracias img {
+  width: 100px;
+  height: auto;
+  margin: 1rem 0;
+  align-self: center;
+}
+
+#modal-gracias button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+  font-size: 16px;
+}
+
+#modal-gracias button:hover {
+  background-color: #004a99;
+}
+
+@media (max-width: 600px) {
+  .formulario-pedidos form {
+    padding: 20px;
+  }
+}
