@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión — Vivero</title>
+    <link rel="stylesheet" href="../recursos/css/admin.css">
+</head>
+<body>
+
+    <header class="admin-header">
+         <a href="/index.html">
+            <img src="../recursos/imagenes/generales/logo.fundacion.png" alt="Logo de la fundación ">
+        </a>
+        <h1>Iniciar sesión</h1>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-form-section">
+            <form id="form-login">
+                <div class="form-grupo">
+                    <label for="input-usuario">Usuario</label>
+                    <input type="text" id="input-usuario" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="input-clave">Clave</label>
+                    <input type="password" id="input-clave" required>
+                </div>
+
+              <div class="form-botones">
+    <button type="submit" class="btn btn-primario">Ingresar</button>
+    <button type="button" class="btn btn-secundario" id="btn-registro">Crear usuario</button>
+</div>
+            </form>
+
+            <p id="mensaje-login" class="mensaje oculto"></p>
+        </section>
+    </main>
+
+    <script src="../recursos/js/login.js"></script>
+</body>
+</html>

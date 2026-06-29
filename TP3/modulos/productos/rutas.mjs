@@ -3,6 +3,7 @@
 
 import { Router } from "express"
 import * as controlador from "./controlador.mjs"
+import { verificarSesion } from "../../autenticacion.mjs"
 
 const rutasProductos = new Router()
 
@@ -15,12 +16,12 @@ rutasProductos.get("/api/v1/productos", controlador.obtenerTodos)
 rutasProductos.get("/api/v1/productos/:id", controlador.obtenerUno)
 
 // creo un producto nuevo
-rutasProductos.post("/api/v1/productos", controlador.crearProducto)
+rutasProductos.post("/api/v1/productos", verificarSesion,controlador.crearProducto)
 
 // editar un producto existente
-rutasProductos.put("/api/v1/productos/:id", controlador.actualizarProducto)
+rutasProductos.put("/api/v1/productos/:id", verificarSesion,controlador.actualizarProducto)
 
 // eliminar un producto
-rutasProductos.delete("/api/v1/productos/:id", controlador.eliminarProducto)
+rutasProductos.delete("/api/v1/productos/:id", verificarSesion,controlador.eliminarProducto)
 
 export { rutasProductos }

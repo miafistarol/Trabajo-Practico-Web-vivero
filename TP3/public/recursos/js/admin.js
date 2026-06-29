@@ -1,26 +1,28 @@
 const API = "http://localhost:3000/api/v1/productos"
 
 // dom
-const formProducto      = document.getElementById("form-producto")
-const formTitulo        = document.getElementById("form-titulo")
-const inputId           = document.getElementById("input-id")
-const inputNombre       = document.getElementById("input-nombre")
-const inputTipoplanta   = document.getElementById("input-tipoplanta")
+const formProducto = document.getElementById("form-producto")
+const formTitulo = document.getElementById("form-titulo")
+const inputId = document.getElementById("input-id")
+const inputNombre  = document.getElementById("input-nombre")
+const inputTipoplanta  = document.getElementById("input-tipoplanta")
 const inputTipoproducto = document.getElementById("input-tipoproducto")
-const inputImagen       = document.getElementById("input-imagen")
-const inputDetalle1     = document.getElementById("input-detalle1")
-const inputDetalle2     = document.getElementById("input-detalle2")
-const tbodyProductos    = document.getElementById("tbody-productos")
-const mensajeForm       = document.getElementById("mensaje-form")
-const btnCancelar       = document.getElementById("btn-cancelar")
+const inputImagen  = document.getElementById("input-imagen")
+const inputDetalle1  = document.getElementById("input-detalle1")
+const inputDetalle2 = document.getElementById("input-detalle2")
+const tbodyProductos = document.getElementById("tbody-productos")
+const mensajeForm = document.getElementById("mensaje-form")
+const btnCancelar= document.getElementById("btn-cancelar")
+const btnLogout = document.getElementById("btn-logout")
 
 //cargo la tabla
 document.addEventListener("DOMContentLoaded", cargarTabla)
 
+/////////////////// FUNCION CARGAR LA TABLA/////////////////
 async function cargarTabla() {
     try {
-        const res  = await fetch(API)
-        const json = await res.json()
+        const res =await fetch(API)
+        const json =await res.json()
 
         if (json.estado !== "ok") throw new Error(json.mensaje)
 
@@ -41,6 +43,7 @@ async function cargarTabla() {
     }
 }
 
+///////////////////// FUNCION CREAR FILA /////////////////////7
 function crearFila(producto) {
     const tr = document.createElement("tr")
     tr.innerHTML = `
@@ -49,7 +52,7 @@ function crearFila(producto) {
         <td>${producto.tipoplanta || "—"}</td>
         <td>${producto.tipoproducto || "—"}</td>
         <td>
-            <button class="btn btn-editar"   onclick="prepararEdicion(${producto.id})">Editar</button>
+            <button class="btn btn-editar" onclick="prepararEdicion(${producto.id})">Editar</button>
             <button class="btn btn-eliminar" onclick="eliminarProducto(${producto.id})">Eliminar</button>
         </td>
     `
@@ -62,12 +65,12 @@ formProducto.addEventListener("submit", async (evento) => {
     const id = inputId.value  // vacío = alta, tiene valor = edición
 
    const datos = {
-    nombre:       inputNombre.value.trim(),
-    tipoplanta:   inputTipoplanta.value,
-    tipoproducto: inputTipoproducto.value,
-    imagen:       inputImagen.value.trim(),
-    detalle1:     inputDetalle1.value.trim(),
-    detalle2:     inputDetalle2.value.trim()
+    nombre: inputNombre.value.trim(),
+    tipoplanta:inputTipoplanta.value,
+    tipoproducto:inputTipoproducto.value,
+    imagen:inputImagen.value.trim(),
+    detalle1: inputDetalle1.value.trim(),
+    detalle2:inputDetalle2.value.trim()
 }
 
     try {
@@ -78,14 +81,16 @@ formProducto.addEventListener("submit", async (evento) => {
             res = await fetch(`${API}/${id}`, {
                 method:  "PUT",
                 headers: { "Content-Type": "application/json" },
-                body:    JSON.stringify(datos)
+                body: JSON.stringify(datos), 
+                credentials: "include"
             })
         } else {
             // POST crear
             res = await fetch(API, {
                 method:  "POST",
                 headers: { "Content-Type": "application/json" },
-                body:    JSON.stringify(datos)
+                body: JSON.stringify(datos), 
+                credentials: "include"
             })
         }
 
@@ -104,7 +109,7 @@ formProducto.addEventListener("submit", async (evento) => {
 
 btnCancelar.addEventListener("click", limpiarFormulario)
 
-
+//////////////FUNCION DE EDITAR//////////////////////////
 async function prepararEdicion(id) {
     try {
         const res  = await fetch(`${API}/${id}`)
@@ -128,12 +133,18 @@ async function prepararEdicion(id) {
     }
 }
 
-// Eliminar producto
+////////////////// FUNCION ELIMINAR UN PRODUCTO //////////////////////
 async function eliminarProducto(id) {
     if (!confirm("¿Seguro que querés eliminar este producto?")) return
 
     try {
-        const res  = await fetch(`${API}/${id}`, { method: "DELETE" })
+        const res  = await fetch(
+            `${API}/${id}`, 
+            { method: "DELETE", 
+                credentials: "include" 
+
+            })
+            
         const json = await res.json()
 
         if (json.estado !== "ok") throw new Error(json.mensaje)
@@ -146,7 +157,7 @@ async function eliminarProducto(id) {
     }
 }
 
-//
+////////// FUNCION LIMPIAR FORMULARIO ///////////
 function limpiarFormulario() {
  inputNombre.value        = ""
 inputTipoplanta.value    = ""
@@ -166,3 +177,19 @@ function mostrarMensaje(texto, tipo) {
 function ocultarMensaje() {
     mensajeForm.className = "mensaje oculto"
 }
+
+btnLogout.addEventListener("click", async () => {
+    try {
+        await fetch("http://localhost:3000/api/v1/usuarios/logout", {
+            method: "POST",
+            credentials: "include"
+            //credentials: "include" para que el navegador mande la cookie
+            //que queremos borrar (clearCookie necesita identificarla)
+        })
+    } catch (error) {
+        console.error("Error al cerrar sesion:", error.message)
+    } finally {
+       
+        window.location.href = "/admin/login.html"
+    }
+})
