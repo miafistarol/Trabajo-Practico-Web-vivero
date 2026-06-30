@@ -21,6 +21,7 @@ El archivo `vivero.sql` contiene:
 - Estructura de la base de datos
 - Datos iniciales
 - Usuarios
+En caso de que la inicialización automática mediante Docker no funcione, la base puede restaurarse manualmente ejecutando dicho archivo sobre una base de datos PostgreSQL.
 
 ## Configuración de PostgreSQL
 - Base de datos: `vivero`
